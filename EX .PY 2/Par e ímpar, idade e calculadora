@@ -1,0 +1,65 @@
+def verificar_par_ou_impar(valor):
+    try:
+       
+        numero = int(valor)
+
+        
+        if numero % 2 == 0:
+            return True  
+        else:
+            return False  
+    except ValueError:
+        
+        return ()"Valor inválido. Informe um número inteiro.")
+
+
+
+
+
+
+def verificar_par_impar(valor):
+    try:
+      
+        numero = int(valor)
+
+        if numero % 2 == 0:
+            return True  
+        else:
+            return False  
+    except ValueError:
+        
+        return "Valor inválido. Por favor, insira um número inteiro."
+
+valor_usuario = input("Digite um número: ")
+
+
+resultado = verificar_par_impar(valor_usuario)
+print(resultado)
+
+
+def comentar_idade(idade):
+    try:
+        
+        idade = int(idade)
+
+       
+        if idade < 0:
+            return "Valor inválido. A idade não pode ser negativa."
+
+      
+        if idade < 18:
+            return "Você é menor de idade."
+        elif 18 <= idade <= 59:
+            return "Você é adulto."
+        else:
+            return "Você é idoso."
+    except ValueError:
+       
+        return "Valor inválido. Por favor, insira um número válido para a idade."
+
+
+idade_usuario = input("Digite sua idade: ")
+
+
+resultado = comentar_idade(idade_usuario)
+print(resultado)
